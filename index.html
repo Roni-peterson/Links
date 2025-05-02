@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Download Automático</title>
+  <script>
+    window.onload = function () {
+      // Substitua pelo link direto do seu arquivo no GitHub Releases
+      const downloadLink = "https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/download/v1.0/NOME_DO_ARQUIVO.zip";
+
+      const a = document.createElement("a");
+      a.href = downloadLink;
+      a.download = ""; // Isso sugere o download (alguns navegadores respeitam, outros não)
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    };
+  </script>
+</head>
+<body>
+  <p>Iniciando o download automático...</p>
+</body>
+</html>
+
